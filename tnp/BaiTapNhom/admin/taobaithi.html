@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo kỳ thi</title>
+    <link rel="stylesheet" href="style/style_taobaithi.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <img src="images/logo_ptit.png" alt="logo" id="header-img" />
+      <h1>TẠO KỲ THI</h1>
+    </div>
+    <form id="form-thi">
+      <label for="ten-thi" class="ten-thi">Tên kỳ thi:</label>
+      <br />
+      <input type="text" class="ten-thi" name="ten-thi" />
+      <br />
+      <label for="mo-ta">Mô tả:</label>
+      <br />
+      <textarea
+        id="mo-ta"
+        name="mo-ta"
+        rows="10"
+        cols="100"
+        style="resize: none"
+      ></textarea>
+      <br />
+      <label for="loai-thi">Loại kỳ thi:</label>
+      <select id="loai-thi" name="loai-thi" onchange="checkTimeAvailable()">
+        <option value="thoi-gian">Thời gian cụ thể</option>
+        <option value="tu-do">Tự do</option>
+      </select>
+      <label for="start-date">Ngày bắt đầu&colon;</label>
+      <input type="date" name="start-date" id="start" />
+      <label for="end-date">Ngày kết thúc&colon;</label>
+      <input type="date" name="end-date" id="end" />
+      <br />
+      <label for="file-selector">Chọn file excel&colon;</label>
+      <input type="file" id="file-selector" name="file" />
+      <br />
+      <label id="label-add">Đề bài&colon;</label>
+      <br />
+      <div id="danh-sach-cau-hoi"></div>
+      <button type="button" id="btn-them-cau-hoi" onclick="themCauHoi()">
+        Thêm câu hỏi
+      </button>
+      <br />
+      <button type="submit" id="btn-save">Lưu đề thi</button>
+    </form>
+  </body>
+
+  <script src="javascript/script_taobaithi.js"></script>
+</html>

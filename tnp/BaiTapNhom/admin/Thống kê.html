@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thống kê Kết quả Thi</title>
+    <link rel="stylesheet" href="style/style2.css" />
+    <link rel="icon" href="images/PTIT Logo.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Thống kê Kết quả Thi</h1>
+    </header>
+
+    <section id="filter">
+      <label for="examFilter">Chọn Kỳ Thi:</label>
+      <select id="examFilter" onchange="filterResults()">
+        <option value="all">Tất cả</option>
+        <option value="exam1">Kỳ Thi 1</option>
+        <option value="exam2">Kỳ Thi 2</option>
+        <option value="exam3">Kỳ Thi 3</option>
+        <option value="exam4">Kỳ Thi 4</option>
+        <option value="exam5">Kỳ Thi 5</option>
+        <option value="exam6">Kỳ Thi 6</option>
+        <!-- Thêm các kỳ thi khác nếu cần -->
+      </select>
+    </section>
+
+    <section id="statistics">
+      <div id="totalParticipation">
+        Tổng số lần tham gia: <span id="totalValue">0</span>
+      </div>
+      <div id="completionRate">
+        Tỷ lệ hoàn thành: <span id="completionValue">0%</span>
+      </div>
+      <div id="averageScore">
+        Điểm trung bình: <span id="averageValue">0</span>
+      </div>
+      <div id="scoreDistribution">
+        <p>Phân phối điểm số:</p>
+        <canvas id="scoreChart" width="1000" height="250"></canvas>
+      </div>
+    </section>
+
+    <section id="export">
+      <button onclick="exportToPDF()">Xuất PDF</button>
+      <button onclick="exportToExcel()">Xuất Excel</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="javascript/script2.js"></script>
+  </body>
+</html>

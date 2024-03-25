@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    height: 100px;
+}
+
+h1{
+    background-color: rgb(221, 0, 0);
+    color: white;
+    font-family: arial;
+    font-size: 30px;
+    height: 50px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#header-img{
+    background-color: white;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+#search-box{
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+#search-bar{
+    font-size: 15px;
+}
+
+#search-button{
+    font-size: 15px;
+}
+
+#profile-box{
+    color: white;
+    font-family: arial;
+    font-size: 17px;
+    margin-left: 20%;
+    margin-top: 10px;
+    width: 15%;
+    background-color: rgba(0, 211, 84, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#result-box{
+    font-size: 20px;
+    margin-left: 20%;
+    width: 60%;
+    padding: 20px;
+}
+
+#detail-box{
+    font-size: 18px;
+    margin-left: 20%;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(0, 54, 214, 0.1);
+}
+
+#export-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+#export-button{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(221, 0, 0);
+    border-width: 0;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem kết quả sinh viên</title>
+    <link rel="stylesheet" href="style/style_xemkq.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <img src="images/logo_ptit.png" alt="logo" id="header-img" />
+      <h1>KẾT QUẢ SINH VIÊN</h1>
+    </div>
+    <div id="search-box">
+      <label for="search-bar">Tìm kiếm sinh viên&colon;</label>
+      <br />
+      <input type="text" id="search-bar" placeholder="Nhập mã sinh viên" />
+      <button id="search-button" onclick="timSinhVien()">Tìm kiếm</button>
+    </div>
+    <div id="profile-box"></div>
+    <div id="result-box"></div>
+    <div id="detail-box"></div>
+    <div id="export-box"></div>
+  </body>
+
+  <script src="javascript/script_xemkq.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style/style1.css" />
+    <link rel="icon" href="images/PTIT Logo.png" />
+  </head>
+  <body>
+    <header><h1>Dashboard Admin</h1></header>
+    <div class="dashboard">
+      <!-- Quản lý danh sách các kỳ thi -->
+      <div class="section">
+        <h2 id="show_E" onclick="showExam()">Quản lý kỳ thi</h2>
+        <button id="add_E" onclick="addExam()">Thêm</button>
+        <button id="edit_E" onclick="editExam()">Sửa</button>
+        <button id="del_E" onclick="deleteExam()">Xoá</button>
+        <ul id="exam_list"></ul>
+      </div>
+
+      <!-- Quản lý danh sách người dùng -->
+      <div class="section">
+        <!-- Nhấn vào dòng chữ quản lý để hiện danh sách-->
+        <h2 id="show_U" onclick="showUser()">Quản lý người dùng</h2>
+        <button id="add_U" onclick="openAddUserModal()">Thêm</button>
+        <button id="add_U" onclick="showInfo()">Thông tin</button>
+        <div id="addUserModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeAddUserModal()">&times;</span>
+            <form id="addUserForm">
+              <label for="username" style="font-weight: bold">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                value=""
+                style="font-size: medium"
+                required
+              />
+
+              <label for="password" style="font-weight: bold">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value=""
+                style="font-size: medium"
+                required
+              />
+
+              <button type="button" onclick="addUser()">Thêm Người Dùng</button>
+            </form>
+          </div>
+        </div>
+
+        <button id="edit_U" onclick="editUser()">Sửa</button>
+        <button id="del_U" onclick="deleteUser()">Xoá</button>
+        <ul id="user_list"></ul>
+      </div>
+
+      <!-- Xem thống kê -->
+      <div class="section">
+        <h2>Thống kê</h2>
+        <button id="statistic" onclick="viewStatistics()">Xem thống kê</button>
+      </div>
+    </div>
+
+    <!-- Modal for forms -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form id="modalForm">
+          <!-- Form fields go here -->
+          <button type="button" onclick="saveData()">Lưu</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="javascript/script1.js"></script>
+  </body>
+</html>

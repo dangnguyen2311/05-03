@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/homepage.css" />
+    <title>Trang Chính</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/ptit-logo.png" alt="ptit-logo" />
+      <div class="header-label">
+        <div>HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG</div>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <h2>Danh sách các bài thi</h2>
+    </div>
+    <div class="content">
+      <div class="left-content">
+        <div>
+          <label for="examCode">Chọn mã đề:</label>
+          <input type="text" id="examCode" placeholder="Nhập mã đề" />
+          <select id="examType">
+            <option value="mock-exam">Loại đề</option>
+            <option value="practice-exam">Luyện tập</option>
+            <option value="midterm-exam">Giữa kì</option>
+            <option value="final-exam">Cuối kì</option>
+          </select>
+          <button onclick="searchExam()">Tìm kiếm</button>
+        </div>
+
+        <button onclick="showMockExams()">Đề thi</button>
+        <button onclick="showPracticeExams()">Luyện tập</button>
+        <button onclick="showMidtermExams()">Giữa kì</button>
+        <button onclick="showFinalExams()">Cuối kì</button>
+      </div>
+      <div class="right-content">
+        <div class="list-exam">
+          <a href="/">
+            <div id="exam1" class="exam practice-exam">
+              <h3>Đề thi luyện tập số 1</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam2" class="exam practice-exam">
+              <h3>Đề thi luyện tập số 2</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam1" class="exam practice-exam">
+              <h3>Đề thi luyện tập số 3</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam1" class="exam practice-exam">
+              <h3>Đề thi luyện tập số 4</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam1" class="exam practice-exam">
+              <h3>Đề thi luyện tập số 5</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam3" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 1</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam4" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 2</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam3" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 3</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam3" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 4</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam3" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 5</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam3" class="exam midterm-exam">
+              <h3>Đề thi giữa kì số 6</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 1</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 2</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 3</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 4</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 5</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 6</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+          <a href="/">
+            <div id="exam5" class="exam final-exam">
+              <h3>Đề thi cuối kì số 7</h3>
+              <p>Thời gian: 60 phút</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPracticeExams() {
+        hideAllExams();
+        document
+          .querySelectorAll(".practice-exam")
+          .forEach((exam) => (exam.style.display = "block"));
+      }
+
+      function showMidtermExams() {
+        hideAllExams();
+        document
+          .querySelectorAll(".midterm-exam")
+          .forEach((exam) => (exam.style.display = "block"));
+      }
+
+      function showFinalExams() {
+        hideAllExams();
+        handleClick();
+      }
+
+      function showMockExams() {
+        hideAllExams();
+        document.getElementById("examCode").value = "";
+        // Các đề thi thi thử không được phân loại, nên hiển thị tất cả
+        document
+          .querySelectorAll(".exam")
+          .forEach((exam) => (exam.style.display = "block"));
+      }
+
+      function hideAllExams() {
+        document
+          .querySelectorAll(".exam")
+          .forEach((exam) => (exam.style.display = "none"));
+      }
+
+      function searchExam() {
+        var examCode = document.getElementById("examCode").value.trim();
+        var examType = document.getElementById("examType").value;
+        var exams = document.querySelectorAll(".exam");
+
+        hideAllExams();
+
+        exams.forEach((exam) => {
+          var currentExamCode = exam.querySelector("h3").textContent.trim();
+          var currentExamType = exam.classList[1];
+
+          if (
+            currentExamCode.includes(examCode) &&
+            currentExamType === examType
+          ) {
+            exam.style.display = "block";
+          }
+        });
+      }
+
+      function handleClick() {
+        var currentTime = new Date().getTime();
+        var specificTime = new Date("2024-03-05T12:00:00").getTime();
+
+        if (currentTime < specificTime) {
+          alert("Hiện chưa có bài thi cuối kì nào. Đợi đến 12h ngày 5/3/2024");
+        } else {
+          document
+            .querySelectorAll(".final-exam")
+            .forEach((exam) => (exam.style.display = "block"));
+        }
+      }
+    </script>
+  </body>
+</html>
